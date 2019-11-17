@@ -6,7 +6,7 @@ const app = express();
 const tourRouter = require('./routes/tourRoutes');
 const userRouter = require('./routes/userRoutes');
 
-// NOTES: Middlewares
+// NOTE: Middlewares
 // console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
@@ -34,7 +34,7 @@ app.get('/', (req, res) => {
 // 	res.send('You can post to this endpoint!');
 // });
 
-// NOTES: Routes
+// NOTE: Routes
 
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);
