@@ -1,5 +1,5 @@
 .cache/
-congig.env
+config.env
 
 # Logs
 logs
